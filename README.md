@@ -17,7 +17,7 @@ This's combined of command line tool and java library:
         	Dictionary tokenConfig = new Hashtable();
         	tokenConfig.put("acl", acl);
         	tokenConfig.put("window_seconds", "86400");
-        	tokenConfig.put("key", "736563757265746f6b");
+        	tokenConfig.put("key", "736563757265746f"); # secure key in hex
         	String generateToken = AkamaiToken.generateToken(tokenConfig);
         	String finalURL = url + "?" + generateToken;
         	System.out.println("Final URL: " + finalURL);
