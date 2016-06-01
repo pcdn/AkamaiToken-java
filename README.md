@@ -6,11 +6,11 @@
 This's combined of command line tool and java library:
 
 
-	1. To use it as command line, see help:
-		```$ java -jar AkamaiToken.jar --help```
+1. To use it as command line, see help:
+	``$ java -jar AkamaiToken.jar --help``
 	
-	2. To use it as library:
-		```java
+2. To use it as library:
+	```java
 		String url = "http://d.s1.pcdn.io/playlist/sub/7CqmZ4DYjAs.mpd";
         	URI uri = new URI(url);
         	String acl = uri.getPath();
@@ -21,6 +21,6 @@ This's combined of command line tool and java library:
         	String generateToken = AkamaiToken.generateToken(tokenConfig);
         	String finalURL = url + "?" + generateToken;
         	System.out.println("Final URL: " + finalURL);
-		```
+	```
 
 
